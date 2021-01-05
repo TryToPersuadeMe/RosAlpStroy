@@ -1,0 +1,15 @@
+.service {
+  &__gridBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5rem;
+  }
+  &__button {
+    color: black;
+    background: #ffffff;
+    border: 3px solid #ff3d00;
+    padding: 2.1rem 6rem;
+    margin-top: 6rem;
+  }
+}

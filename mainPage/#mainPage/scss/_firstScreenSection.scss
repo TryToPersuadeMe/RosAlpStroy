@@ -1,0 +1,9 @@
+.firstScreen {
+  height: 100vh;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  &__fullHeightBcgrImage {
+    background-image: url("../img/bigBackgroundImages/1.jpg");
+  }
+}

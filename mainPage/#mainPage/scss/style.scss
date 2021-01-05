@@ -1,0 +1,39 @@
+@import "./scss__global/reset.scss";
+@import "./scss__global/fonts.scss";
+
+/* global settings */
+html,
+body {
+  font-size: 10px;
+}
+
+$globalFontFamily: "Roboto";
+
+.wrapper {
+  overflow-x: hidden;
+  min-height: 100%;
+  font-family: $globalFontFamily;
+  height: 100%;
+}
+
+.container {
+  max-width: 133.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+/* global settings */
+
+@import "./scss__global/mixins.scss";
+@import "./scss__global/elements.scss";
+
+@import "header.scss";
+
+/* sections */
+@import "_firstScreenSection.scss";
+@import "_serviceSection.scss";
+@import "_leaveAnApplicationSection.scss";
