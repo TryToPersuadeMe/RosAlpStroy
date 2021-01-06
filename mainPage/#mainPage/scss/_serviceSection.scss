@@ -11,5 +11,10 @@
     border: 3px solid #ff3d00;
     padding: 2.1rem 6rem;
     margin-top: 6rem;
+    transition: 0.3s ease;
+    &:hover {
+      color: #ffffff;
+      background: #ff3d00;
+    }
   }
 }

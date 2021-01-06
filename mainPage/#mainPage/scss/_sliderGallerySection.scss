@@ -1,9 +1,8 @@
 $arrowsSpace: -6rem;
+$paginationMargin: -9rem;
 
 .gallery.container {
-  //   padding-left: $arrowsSpace * -1;
-  //   padding-right: $arrowsSpace * -1;
-  //   max-width: 140rem;
+  padding-bottom: $paginationMargin * -1 + 7rem;
 }
 
 .sliderGallery {
@@ -37,6 +36,12 @@ $arrowsSpace: -6rem;
     top: 50%;
     cursor: pointer;
     transform: translate(0, -50%);
+    transition: 0.3s ease;
+  }
+
+  .swiper-button-disabled {
+    opacity: 0;
+    visibility: hidden;
   }
 
   &__button-next {
@@ -53,7 +58,7 @@ $arrowsSpace: -6rem;
     bottom: 0;
     z-index: 2;
     right: 50%;
-    bottom: -9rem;
+    bottom: $paginationMargin;
     transform: translate(50%, 0);
     .swiper-pagination-bullet {
       width: 12px;

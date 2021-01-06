@@ -7,7 +7,7 @@
   padding: 3rem;
   background-color: white;
   margin-bottom: 15px;
-
+  cursor: pointer;
   &::after {
     content: "";
     position: absolute;
@@ -48,7 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
+
     span {
       margin-left: 2rem;
     }
