@@ -74,7 +74,6 @@
   @include shadow;
 }
 
-
 .cardWithImage {
   position: relative;
   max-width: 50rem;
@@ -118,6 +117,7 @@
 
 .fullWidthPicture {
   height: 45vh;
+  min-height: 40rem;
   position: relative;
   @include shadow;
   &__image {
