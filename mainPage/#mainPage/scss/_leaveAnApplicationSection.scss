@@ -1,12 +1,65 @@
 .leaveAnApplicationSection {
+  min-height: 100vh;
+  height: 100vh;
   &__fullHeightBcgrImage {
+    background-image: url("../img/bigBackgroundImages/2.jpg");
   }
 
   &__suptitle {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  &__container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  &__contentWrapper {
+    max-width: 50rem;
+    width: 100%;
+  }
+
+  .requestForm {
+    margin-top: 4rem;
   }
 }
 
 .requestForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Roboto Mono";
+  &__input {
+    width: 100%;
+    height: 7rem;
+    font-size: 1.8rem;
+    background: #ffffff;
+    border: 1px solid #000000;
+    padding: 0 20px;
+    &:not(:last-of-type) {
+      margin: 0 0 3.5rem;
+    }
+    ::placeholder {
+      font-weight: 400;
+      font-size: 1.8rem;
+
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
   &__text {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  &__button {
+    margin-top: 2.5rem;
   }
 }

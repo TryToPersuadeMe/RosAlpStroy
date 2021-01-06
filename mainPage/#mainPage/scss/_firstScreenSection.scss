@@ -6,4 +6,10 @@
   &__fullHeightBcgrImage {
     background-image: url("../img/bigBackgroundImages/1.jpg");
   }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }

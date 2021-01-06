@@ -22,18 +22,26 @@ $globalFontFamily: "Roboto";
   padding-right: 20px;
   width: 100%;
   margin: 0 auto;
+  &_fullHeight {
+    min-height: 100%;
+    height: 100%;
+  }
 }
-
-
 
 /* global settings */
 
 @import "./scss__global/mixins.scss";
 @import "./scss__global/elements.scss";
 
-@import "header.scss";
+@import "#header.scss";
 
 /* sections */
 @import "_firstScreenSection.scss";
 @import "_serviceSection.scss";
 @import "_leaveAnApplicationSection.scss";
+
+@import "_sliderGallerySection.scss";
+@import "swiper.scss";
+
+@import "_FaQSection.scss";
+@import "_contactsSection.scss";

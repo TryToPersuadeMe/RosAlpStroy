@@ -1,0 +1,70 @@
+$arrowsSpace: -6rem;
+
+.gallery.container {
+  //   padding-left: $arrowsSpace * -1;
+  //   padding-right: $arrowsSpace * -1;
+  //   max-width: 140rem;
+}
+
+.sliderGallery {
+  position: relative;
+  &__wrapper {
+  }
+
+  &__slider {
+    height: 28rem;
+  }
+
+  &__slide {
+    img,
+    source {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__button-next,
+  &__button-prev {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icons/arrow-orange.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    cursor: pointer;
+    transform: translate(0, -50%);
+  }
+
+  &__button-next {
+    right: $arrowsSpace;
+    transform: translate(0, -50%) rotate(180deg);
+  }
+
+  &__button-prev {
+    left: $arrowsSpace;
+  }
+
+  &__pagination {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    right: 50%;
+    bottom: -9rem;
+    transform: translate(50%, 0);
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background-color: #c4c4c4;
+      margin: 0 5px;
+    }
+    .swiper-pagination-bullet-active {
+      width: 14px;
+      height: 14px;
+      background-color: #ff3d00;
+    }
+  }
+}
