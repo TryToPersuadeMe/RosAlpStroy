@@ -10,7 +10,6 @@ new Swiper(".sliderGallery__slider", {
   },
 
   /* Количество слайдов для показа */
-  slidesPerView: 3,
   /* адаптив по высоте */
   // autoHeight:"auto"
   /* адаптив */
@@ -18,16 +17,31 @@ new Swiper(".sliderGallery__slider", {
   /* отсутпы между слайдами */
   spaceBetween: 50,
   /* центрирование слайда*/
-  // centeredSlides: true,
+
   /* стартовый слайд */
   // initialSlide: 1,
   /* Количество пролистываемых слайдов */
-  slidesPerGroup: 3,
+  breakpoints: {
+    319: {
+      slidesPerGroup: 1,
+  spaceBetween: 50,
+      slidesPerView: 1,
+    },
+    769: {
+      slidesPerGroup: 2,
+      spaceBetween: 35,
+      slidesPerView: 2,
+    },
 
+    1001: {
+      slidesPerGroup: 3,
+      slidesPerView: 3,
+    },
+  },
   /* несколько рядом в слайдере */
   // slidesPerColumn: 1,
   /* скорость прокуртки */
-  // speed: 500,
+  speed: 800,
   /* вертикальный слайдер */
   // direction: "vertical",
   /* эффекты переключения */
@@ -73,7 +87,4 @@ new Swiper(".sliderGallery__slider", {
   /* отключитьпосле ручного переключения */
   // disableOnInteracion:false
   // }
-  /*  breakpoints: {
-    320: {},
-  }, */
 });

@@ -1,4 +1,3 @@
-$arrowsSpace: -6rem;
 $paginationMargin: -9rem;
 
 .gallery.container {
@@ -7,14 +6,33 @@ $paginationMargin: -9rem;
 
 .sliderGallery {
   position: relative;
+  @media (max-width: 1440px) {
+    padding: 0 3rem;
+  }
   &__wrapper {
   }
 
   &__slider {
     height: 28rem;
+
+    @media (max-width: 1000px) {
+      height: 32rem;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 50rem;
+    }
+
+    @media (max-width: 650px) {
+      height: 28rem;
+    }
+    @media (max-width: 480px) {
+      height: 23rem;
+    }
   }
 
   &__slide {
+    max-width: 50rem;
     img,
     source {
       width: 100%;
@@ -45,12 +63,18 @@ $paginationMargin: -9rem;
   }
 
   &__button-next {
-    right: $arrowsSpace;
+    right: -5rem;
     transform: translate(0, -50%) rotate(180deg);
+    @media (max-width: 1440px) {
+      right: -1rem;
+    }
   }
 
   &__button-prev {
-    left: $arrowsSpace;
+    left: -5rem;
+    @media (max-width: 1440px) {
+      left: -1rem;
+    }
   }
 
   &__pagination {
@@ -60,11 +84,21 @@ $paginationMargin: -9rem;
     right: 50%;
     bottom: $paginationMargin;
     transform: translate(50%, 0);
+    @media (max-width: 1280px) {
+      bottom: $paginationMargin + 3rem;
+    }
+    @media (max-width: 768px) {
+      bottom: $paginationMargin + 5rem;
+    }
+
     .swiper-pagination-bullet {
       width: 12px;
       height: 12px;
       background-color: #c4c4c4;
       margin: 0 5px;
+      @media (max-width: 1000px) {
+        margin: 5px;
+      }
     }
     .swiper-pagination-bullet-active {
       width: 14px;
