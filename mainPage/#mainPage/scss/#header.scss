@@ -46,10 +46,13 @@
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.1;
-
-    margin-right: 2.8rem;
-    &:last-of-type {
-      margin: 0;
+    color: black;
+    transition: 0.3s ease;
+    &:hover {
+      color: #ff6433;
+    }
+    &:not(:last-of-type) {
+      margin-right: 2.8rem;
     }
   }
 }

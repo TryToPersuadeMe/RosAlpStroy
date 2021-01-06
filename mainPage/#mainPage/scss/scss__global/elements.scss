@@ -10,11 +10,24 @@
   justify-content: center;
   font-weight: bold;
   align-items: center;
+  align-self: flex-start;
+  transition: 0.3s ease;
   &_orange {
+    color: #ffffff;
     background-color: #ff6433;
+    border: 2px solid #ff6433;
+    &:hover {
+      color: #ff6433;
+      background-color: #ffffff;
+    }
   }
   &_purple {
+    border: 2px solid #641cff;
     background-color: #641cff;
+    &:hover {
+      color: #641cff;
+      background-color: #ffffff;
+    }
   }
 }
 
@@ -24,6 +37,7 @@
   line-height: 1.2;
   color: #ffffff;
   max-width: 78.5rem;
+  margin-bottom: 13vh;
 }
 
 .sectionTitle {
@@ -37,6 +51,20 @@
 
 .fullHeightBcgrImage {
   @include backgroundImage;
+  @include shadow;
+}
+
+.fullWidthPicture {
+  max-height: 45vh;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  img,
+  source {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   @include shadow;
 }
 
