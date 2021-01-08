@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Главная страница РОС АЛЬП</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include("_firstScreenSection.html")
+
+      <div class="container valueLists">
+        <div class="valueLists__row">
+          <div class="valueLists__column">
+            <h5 class="sectionTitle sectionTitle_margin sectionTitle_small">
+              Избавляем и предотвращаем:
+            </h5>
+            <ul class="markedList">
+              <li class="markedList__li markedList__li_circle">Промерзания стен</li>
+              <li class="markedList__li markedList__li_circle">Влаги и плесени на стенах</li>
+              <li class="markedList__li markedList__li_circle">Сырости в помещении</li>
+              <li class="markedList__li markedList__li_circle">Конденсата на окнах</li>
+              <li class="markedList__li markedList__li_circle">
+                Болезней, связанных с вышеперечисленным
+              </li>
+            </ul>
+          </div>
+
+          <div class="valueLists__column">
+            <h5 class="sectionTitle sectionTitle_margin sectionTitle_small">При этом утепление:</h5>
+            <ul class="markedList">
+              <li class="markedList__li markedList__li_circle">
+                Повышает общую температуру в помещении
+              </li>
+              <li class="markedList__li markedList__li_circle">Экономит затраты на обогрев</li>
+              <li class="markedList__li markedList__li_circle">Защищает и украшает фасад</li>
+              <li class="markedList__li markedList__li_circle">
+                Защищает ремонт внутри помещения
+              </li>
+              <li class="markedList__li markedList__li_circle">
+                Болезней, связанных с вышеперечисленным
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="fullWidthPicture">
+        <div class="fullWidthPicture__image">
+          <img src="./img/bigBackgroundImages/2.jpg" alt="#" />
+        </div>
+      </div>
+
+      @@include("_priceSection.html")
+
+      <div class="fullWidthPicture">
+        <div class="fullWidthPicture__image">
+          <img src="./img/bigBackgroundImages/3.jpg" alt="#" />
+        </div>
+      </div>
+      @@include("_technologySection.html")
+      <div class="fullWidthPicture">
+        <div class="fullWidthPicture__image">
+          <img src="./img/bigBackgroundImages/4.jpg" alt="#" />
+        </div>
+      </div>
+
+      @@include("_advantagesUlList.html") @@include("_leaveAnApplicationSection.html")
+      @@include("_sliderGallerySection.html")
+
+      <div class="fullWidthPicture">
+        <div class="fullWidthPicture__image">
+          <img src="./img/bigBackgroundImages/6.jpg" alt="#" />
+        </div>
+      </div>
+
+      @@include("_contactsSection.html")
+    </div>
+    <!-- swiper plugin -->
+    <script src="./js/js__plugins/swiper-bundle.min.js"></script>
+
+    <!-- main js -->
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

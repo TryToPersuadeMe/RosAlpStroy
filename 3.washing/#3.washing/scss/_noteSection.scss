@@ -1,0 +1,42 @@
+.note {
+  &__orderedList {
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-top: 4rem;
+  }
+
+  .sectionTitle {
+    @media (max-width: 480px) {
+      text-align: center;
+    }
+  }
+}
+
+.orderedList {
+  list-style-type: none;
+
+  &__li {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    counter-increment: li-notes;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    @media (max-width: 480px) {
+      font-size: 1.8rem;
+    }
+    &::before {
+      content: counter(li-notes, decimal-leading-zero);
+      font-weight: 900;
+      font-size: 4.8rem;
+      color: rgba(116, 51, 255, 0.15);
+      align-self: flex-start;
+      margin-right: 1.5rem;
+    }
+  }
+}

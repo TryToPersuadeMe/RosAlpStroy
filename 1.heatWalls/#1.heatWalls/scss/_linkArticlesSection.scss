@@ -1,0 +1,16 @@
+.linkArticles {
+  &__gridBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    gap: 5rem;
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+      justify-items: center;
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+      gap: 4rem;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Главная страница РОС АЛЬП</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include("_firstScreenSection.html")
+
+      <div class="container markedList markedList_gridNoteBlock">
+        <p class="markedList__text">
+          Наша компания так же занимается разнообразными видами защитных покрытий бетонных и
+          металлоконструкций в любых промышленных масштабах.
+        </p>
+
+        <ul class="markedList__ul">
+          <li class="markedList__li markedList__li_circle">
+            Данная услуга очень актуальная в наше время, никакая крупномасштабная стройка не
+            обходится без металлоконструкций, особенно мосты или отдельно стоящие конструкции как
+            например – вышки связи, силосы, нефтяные резервуары и другие виды металлических
+            конструкций. Для долговечной службы метал покрывают составами от защищающими от коррозии
+            и огнезащитными составами.
+          </li>
+          <li class="markedList__li markedList__li_circle">
+            Так же проводится техническое обслуживание уже давно построенных сооружений путем:
+            очистки поверхности от старых покрытий и нанесения новых необходимых составов.
+          </li>
+        </ul>
+      </div>
+
+      <div class="fullWidthPicture">
+        <div class="fullWidthPicture__image">
+          <img src="./img/bigBackgroundImages/2.jpg" alt="#" />
+        </div>
+      </div>
+
+      @@include("_priceSection.html") @@include("_leaveAnApplicationSection.html")
+      @@include("_sliderGallerySection.html")
+
+      <div class="fullWidthPicture">
+        <div class="fullWidthPicture__image">
+          <img src="./img/bigBackgroundImages/6.jpg" alt="#" />
+        </div>
+      </div>
+
+      @@include("_contactsSection.html")
+    </div>
+    <!-- swiper plugin -->
+    <script src="./js/js__plugins/swiper-bundle.min.js"></script>
+
+    <!-- main js -->
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>
