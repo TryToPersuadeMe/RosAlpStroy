@@ -176,7 +176,9 @@
     &_small {
       font-size: 1.8rem;
     }
-
+    &_400FW {
+      font-weight: 400;
+    }
     @media (max-width: 768px) {
       font-size: 2.1rem;
     }

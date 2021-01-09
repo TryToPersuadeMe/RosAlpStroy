@@ -1,0 +1,44 @@
+.advantages {
+  &__gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
+    gap: 4rem;
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+      justify-items: center;
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+      gap: 3rem;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    position: relative;
+    height: 16rem;
+    max-width: 40rem;
+  }
+
+  &__image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    @include responsiveImage;
+
+    img,
+    source {
+      object-fit: contain;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+  }
+}

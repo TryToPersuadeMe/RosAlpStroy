@@ -1,0 +1,19 @@
+.textBlock {
+  display: grid;
+  gap: 3rem;
+  grid-template-rows: auto;
+  &__text {
+    font-size: 2rem;
+    line-height: 1.2;
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+    @media (max-width: 480px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  .bigImage {
+    margin-top: 2rem;
+  }
+}
