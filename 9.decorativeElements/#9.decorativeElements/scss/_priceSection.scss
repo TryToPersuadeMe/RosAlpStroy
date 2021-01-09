@@ -33,3 +33,9 @@
     }
   }
 }
+
+.priceSection {
+  display: grid;
+  gap: 5rem;
+  grid-template-rows: auto;
+}

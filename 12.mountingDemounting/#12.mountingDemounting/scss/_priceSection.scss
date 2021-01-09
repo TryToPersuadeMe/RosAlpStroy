@@ -1,0 +1,35 @@
+.priceTable {
+  border: 3px solid #ff6433;
+
+  &__row {
+    line-height: 1.2;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3.5rem;
+    @media (max-width: 800px) {
+      padding: 2rem 1.5rem;
+    }
+    &:not(:last-of-type) {
+      border-bottom: 3px solid #ff6433;
+    }
+  }
+
+  &__name {
+    font-size: 2.1rem;
+    margin-right: 2rem;
+    flex: 1 0 70%;
+    @media (max-width: 650px) {
+      font-size: 1.8rem;
+    }
+  }
+  &__price {
+    font-weight: bold;
+    font-size: 2.4rem;
+    flex: 0 1 30%;
+    text-align: end;
+    @media (max-width: 650px) {
+      font-size: 2.1rem;
+    }
+  }
+}

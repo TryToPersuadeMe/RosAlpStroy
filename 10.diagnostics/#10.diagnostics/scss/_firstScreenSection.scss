@@ -1,0 +1,25 @@
+.firstScreen {
+  height: 100vh;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+
+  &__fullHeightBcgrImage {
+    background-image: url("../img/bigBackgroundImages/1.jpg");
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15vh;
+    padding-top: 2rem;
+  }
+
+  &__button {
+    margin-top: 6vh;
+    @media (max-width: 480px) {
+      margin: 0 auto;
+    }
+  }
+}

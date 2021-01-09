@@ -1,0 +1,110 @@
+$paginationMargin: -9rem;
+
+.gallery.container {
+  padding-bottom: $paginationMargin * -1 + 7rem;
+  @media (max-width: 768px) {
+    padding-bottom: $paginationMargin * -1 + 3rem;
+  }
+}
+
+.sliderGallery {
+  position: relative;
+  @media (max-width: 1440px) {
+    padding: 0 3rem;
+  }
+  &__wrapper {
+  }
+
+  &__slider {
+    height: 28rem;
+
+    @media (max-width: 1000px) {
+      height: 32rem;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 50rem;
+    }
+
+    @media (max-width: 650px) {
+      height: 28rem;
+    }
+    @media (max-width: 480px) {
+      height: 23rem;
+    }
+  }
+
+  &__slide {
+    max-width: 50rem;
+    img,
+    source {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__button-next,
+  &__button-prev {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/icons/arrow-orange.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    transition: 0.3s ease;
+  }
+
+  .swiper-button-disabled {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__button-next {
+    right: -5rem;
+    transform: translate(0, -50%) rotate(180deg);
+    @media (max-width: 1440px) {
+      right: -1rem;
+    }
+  }
+
+  &__button-prev {
+    left: -5rem;
+    @media (max-width: 1440px) {
+      left: -1rem;
+    }
+  }
+
+  &__pagination {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    right: 50%;
+    bottom: $paginationMargin;
+    transform: translate(50%, 0);
+
+    @media (max-width: 768px) {
+      bottom: $paginationMargin + 2rem;
+    }
+
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background-color: #c4c4c4;
+      margin: 0 5px;
+      @media (max-width: 1000px) {
+        margin: 5px;
+      }
+    }
+    .swiper-pagination-bullet-active {
+      width: 14px;
+      height: 14px;
+      background-color: #ff3d00;
+    }
+  }
+}

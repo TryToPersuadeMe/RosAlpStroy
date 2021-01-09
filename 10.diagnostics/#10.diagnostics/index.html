@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Главная страница РОС АЛЬП</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      @@include("_firstScreenSection.html") @@include("_noteSection.html")
+
+      <div class="fullWidthPicture">
+        <div class="fullWidthPicture__image">
+          <img src="./img/bigBackgroundImages/2.jpg" alt="#" />
+        </div>
+      </div>
+
+      @@include("_priceSection.html")
+
+     
+      @@include("_leaveAnApplicationSection.html") @@include("_sliderGallerySection.html")
+
+      <div class="fullWidthPicture">
+        <div class="fullWidthPicture__image">
+          <img src="./img/bigBackgroundImages/6.jpg" alt="#" />
+        </div>
+      </div>
+
+      @@include("_contactsSection.html")
+    </div>
+    <!-- swiper plugin -->
+    <script src="./js/js__plugins/swiper-bundle.min.js"></script>
+
+    <!-- main js -->
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

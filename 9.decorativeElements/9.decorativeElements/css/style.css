@@ -945,6 +945,12 @@ body {
   }
 }
 
+.priceSection {
+  display: grid;
+  gap: 5rem;
+  grid-template-rows: auto;
+}
+
 .leaveAnApplicationSection {
   min-height: 100vh;
 }
