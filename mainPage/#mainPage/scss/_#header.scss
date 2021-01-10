@@ -6,7 +6,7 @@
   padding-bottom: 2rem;
   background-color: white;
   justify-content: flex-end;
-
+  min-width: 75%;
   &__logo {
     position: relative;
     max-width: 21rem;
@@ -32,18 +32,21 @@
   }
   &__text {
     font-size: 1.6rem;
+    margin: 0.2rem 0;
+    &_bold {
+      font-weight: 700;
+    }
+    &_big {
+      font-size: 2.8rem;
+    }
+    &_orange {
+      color: #ff4433;
+    }
   }
   &__number {
-    font-weight: 700;
-    font-size: 2.8rem;
-    color: #ff4433;
     @media (max-width: 480px) {
       font-size: 2.4rem;
     }
-  }
-
-  &__schedule {
-    font-size: 1.6rem;
   }
 
   &__burgerMenu {
@@ -114,7 +117,7 @@
 }
 
 .navigation {
-  margin: 0 4rem 0 1rem;
+  margin: 0 4rem 0 2rem;
   width: 100%;
   @media (max-width: 950px) {
     position: absolute;
@@ -229,7 +232,6 @@
     padding: 2rem;
     font-size: 2rem;
     text-align: justify;
-   
   }
 
   &__toggleButton {
