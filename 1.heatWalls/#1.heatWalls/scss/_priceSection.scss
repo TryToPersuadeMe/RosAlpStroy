@@ -18,18 +18,22 @@
   &__name {
     font-size: 2.1rem;
     margin-right: 2rem;
-    flex: 1 0 70%;
+    @media (min-width: 651px) {
+      flex: 1 0 70%;
+    }
     @media (max-width: 650px) {
       font-size: 1.8rem;
     }
   }
   &__price {
     font-weight: bold;
-    font-size: 2.4rem;
-    flex: 0 1 30%;
+    font-size: 2.2rem;
     text-align: end;
+    @media (min-width: 651px) {
+      flex: 0 1 30%;
+    }
     @media (max-width: 650px) {
-      font-size: 2.1rem;
+      font-size: 2rem;
     }
   }
 }
