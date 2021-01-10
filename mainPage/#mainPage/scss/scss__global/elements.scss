@@ -125,6 +125,18 @@
       font-size: 1.8rem;
     }
   }
+
+    &__price {
+    position: absolute;
+    top: 20%;
+    font-size: 1.6rem;
+    color: white;
+    padding: 1rem;
+    background-color: rgb(62, 194, 62);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    z-index: 2;
+  }
 }
 
 .fullWidthPicture {
