@@ -15,9 +15,6 @@
     @media (max-width: 480px) {
       margin: 4rem 0 0 0;
     }
-
-    @media (max-width: 360px) {
-    }
   }
 
   &__logo {
@@ -38,7 +35,7 @@
     }
   }
   &__addressBox {
-    margin: 7rem 0 6rem 0;
+    margin: 5rem 0 4rem 0;
     font-style: normal;
     .contacts__text {
       &:not(:nth-of-type(-n + 2)) {
@@ -61,18 +58,15 @@
   }
 
   &__text {
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 1.2;
-    @media (max-width: 360px) {
-      font-size: 1.8rem;
-    }
 
     &_bold {
       font-weight: 700;
     }
 
     &_small {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       margin-top: 2rem;
       @media (max-width: 360px) {
         font-size: 1.6rem;

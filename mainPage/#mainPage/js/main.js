@@ -18,3 +18,12 @@ for (let anchor of anchors) {
   });
 }
 
+@@include("vkWidget.js");
+
+/* lazy google map */
+window.addEventListener("load", (event) => {
+  const googleMap = document.querySelector("#googleMap");
+  const src = googleMap.getAttribute("data-src");
+  googleMap.removeAttribute("data-src");
+  googleMap.setAttribute("src", src);
+});

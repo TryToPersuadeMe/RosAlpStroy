@@ -10,17 +10,14 @@
   }
 
   &__item {
-    padding: 3rem;
+    padding: 2rem;
     background: rgba(255, 255, 255, 0.85);
     border: 3px solid #ff3d00;
     border-radius: 4px;
   }
 
   &__text {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     line-height: 1.4;
-    @media (max-width: 480px) {
-      font-size: 1.8rem;
-    }
   }
 }
