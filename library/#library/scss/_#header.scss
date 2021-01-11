@@ -6,12 +6,12 @@
   padding-bottom: 2rem;
   background-color: white;
   justify-content: flex-end;
-
+  min-width: 65%;
   &__logo {
     position: relative;
-    max-width: 21rem;
+    max-width: 25rem;
     width: 100%;
-    height: 6.5rem;
+    height: 7.5rem;
 
     @include responsiveImage;
     @media (max-width: 650px) {
@@ -27,22 +27,29 @@
     text-align: end;
     flex: 1 0 auto;
     @media (max-width: 480px) {
+      flex: 1 1 auto;
     }
   }
   &__text {
     font-size: 1.6rem;
+    margin: 0.2rem 0;
+    &_bold {
+      font-weight: 700;
+    }
+    &_medium {
+      font-size: 1.9rem;
+    }
+    &_big {
+      font-size: 2.5rem;
+    }
+    &_orange {
+      color: #ff4433;
+    }
   }
   &__number {
-    font-weight: 700;
-    font-size: 2.8rem;
-    color: #ff4433;
     @media (max-width: 480px) {
       font-size: 2.4rem;
     }
-  }
-
-  &__schedule {
-    font-size: 1.4rem;
   }
 
   &__burgerMenu {
@@ -67,11 +74,10 @@
         left: 50%;
         transform: translateX(-50%);
         width: 4rem;
-        height: 3px;
+        height: 0.2rem;
         background-color: white;
         width: 80%;
         transition: 0.3s ease;
-        z-index: -1;
       }
       span {
         transition: 0.3s ease;
@@ -113,7 +119,7 @@
 }
 
 .navigation {
-  margin: 0 4rem 0 1rem;
+  margin: 0 4rem 0 2rem;
   width: 100%;
   @media (max-width: 950px) {
     position: absolute;
@@ -174,10 +180,118 @@
       padding: 2rem;
       font-size: 3rem;
       text-align: center;
+      display: inline-block;
     }
 
     @media (max-width: 480px) {
       font-size: 2rem;
+    }
+  }
+}
+
+.dropList {
+  position: relative;
+  transition: 0.3s ease;
+  overflow: hidden;
+  text-align: center;
+  &_active {
+    overflow: visible;
+    .dropList__wrapper {
+      opacity: 1;
+      top: 200%;
+      visibility: visible;
+      @media (max-width: 950px) {
+        top: 120%;
+      }
+    }
+
+    .dropList__toggleButton {
+      color: #ff6433;
+      &:after,
+      &::before {
+        background-color: #ff6433;
+      }
+      &:after {
+        transform: rotate(-45deg) translateY(-50%);
+        right: 3px;
+      }
+      &::before {
+        transform: rotate(45deg) translateY(-50%);
+      }
+    }
+  }
+  &__wrapper {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 350%;
+    box-shadow: 1px 1px 14px black;
+    z-index: 4;
+    background-color: white;
+    min-width: 50rem;
+    line-height: 1.2;
+    border-radius: 5px;
+
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: start;
+    @media (max-width: 950px) {
+      min-width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__toggleButton {
+    padding-right: 2.5rem;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+      &:after,
+      &::before {
+        background-color: #ff6433;
+      }
+    }
+    &:after,
+    &::before {
+      content: "";
+      transition: 0.3s ease;
+      height: 3px;
+      width: 10px;
+      background-color: black;
+      top: 50%;
+      position: absolute;
+      border-radius: 4px;
+    }
+    &:after {
+      transform: rotate(45deg) translateY(-100%);
+      right: 10px;
+    }
+    &::before {
+      transform: rotate(-45deg) translateY(-100%);
+      right: 0px;
+    }
+    /*  @media (max-width: 950px) {
+      &:after {
+        transform: rotate(45deg) translateY(-50%);
+        right: 0%;
+      }
+      &::before {
+        transform: rotate(-45deg) translateY(-50%);
+        right: 0px;
+      }
+    } */
+  }
+  &__link {
+    color: rgba(0, 0, 0, 0.904);
+    margin: 1rem 0;
+    transition: 0.3s ease;
+    &:hover {
+      color: #ff6433;
     }
   }
 }

@@ -1,8 +1,12 @@
 .library {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 5rem;
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 650px) {
     grid-template-columns: 1fr;
   }
 }
@@ -16,6 +20,10 @@
   border-radius: 5px;
   transition: 0.3s ease;
   color: black;
+  @media (max-width: 650px) {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
   &:hover {
     transform: scale(1.05);
   }
@@ -27,7 +35,7 @@
   }
 
   &__text {
-    font-size: 2rem;
+    font-size: 1.9rem;
     text-align: justify;
   }
 
@@ -37,8 +45,8 @@
     position: relative;
     padding-bottom: 60%;
     @include responsiveImage;
-    @media (max-width: 768px) and (min-width: 481px) {
-      padding-bottom: 40%;
+    @media (max-width: 480px) {
+      padding-bottom: 80%;
     }
 
     img,

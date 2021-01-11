@@ -20,14 +20,17 @@
     <div class="leaveAnApplicationSection__contentWrapper">
       <h2 class="sectionTitle">Оставьте заявку</h2>
       <h4 class="leaveAnApplicationSection__suptitle">Мы ответим на ваши вопросы</h4>
-      <form class="requestForm" action="#">
-        <input class="requestForm__input" type="text" placeholder="Введите Ваше имя" />
-        <input class="requestForm__input" type="email" placeholder="Введите Вашу эл.почту" />
-        <input class="requestForm__input" type="number" placeholder="Введите Ваш номер телефона" />
-        <p class="requestForm__text">
+
+      <form class="requestForm requestForm_column" action="#">
+        <fieldset class="requestForm__fieldsWrapper">
+          <input class="input" type="text" placeholder="Введите Ваше имя" />
+          <input class="input" type="email" placeholder="Введите Вашу эл.почту" />
+          <input class="input" type="number" placeholder="Введите Ваш номер телефона" />
+        </fieldset>
+        <p class="requestForm__text requestForm__text_small">
           Нажимая на кнопку “Отправить”, вы соглашаетесь на обработку персональных данных
         </p>
-        <button class="button button_purple requestForm__button">Отправить</button>
+        <button class="button button_orange">Отправить</button>
       </form>
     </div>
   </div>
