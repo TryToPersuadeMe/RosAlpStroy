@@ -2,9 +2,14 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  text-shadow: 0px 0px 10px black;
+  text-shadow: 0px 0px 6px black;
+
   &__fullHeightBcgrImage {
     background-image: url("../img/bigBackgroundImages/2.jpg");
+    &:after {
+      content: "";
+      background: rgba(10, 0, 32, 0.45);
+    }
   }
 
   .sectionTitle,
@@ -51,6 +56,12 @@
     @media (max-width: 950px) {
       display: none;
     }
+  }
+  .markedList__li_big{
+    display: inline;
+    font-weight: 700;
+    font-size: 2.4rem;
+    width: 100%;
   }
   .markedList__li_circle {
     &:before {
