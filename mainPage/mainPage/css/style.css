@@ -1274,6 +1274,10 @@ body {
 
 .leaveAnApplicationSection__contentWrapper {
   max-width: 50rem;
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   width: 100%;
 }
 
@@ -1289,9 +1293,12 @@ body {
 
 .leaveAnApplicationSection .markedList {
   margin-right: 3rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 900px) {
   .leaveAnApplicationSection .markedList {
     display: none;
   }
@@ -1300,7 +1307,7 @@ body {
 .leaveAnApplicationSection .markedList__li_big {
   display: inline;
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   width: 100%;
 }
 

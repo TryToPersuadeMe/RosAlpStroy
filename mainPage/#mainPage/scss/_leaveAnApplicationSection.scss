@@ -41,7 +41,10 @@
 
   &__contentWrapper {
     max-width: 50rem;
+    text-align: center;
+    flex: 0 1 auto;
     width: 100%;
+
   }
 
   .requestForm {
@@ -53,14 +56,16 @@
 
   .markedList {
     margin-right: 3rem;
-    @media (max-width: 950px) {
+    flex: 0 0 60%;
+    
+    @media (max-width:900px) {
       display: none;
     }
   }
   .markedList__li_big{
     display: inline;
     font-weight: 700;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     width: 100%;
   }
   .markedList__li_circle {
